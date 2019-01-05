@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #BBDEFB;
+  color: #212121;
+}
+
+.heading {
+  text-align: center;
+  padding: 10px;
+}
+
+.list {
+  list-style: none;
+  max-width: 800px;
+  margin: 50px auto 0px auto;
+  padding: 0px;
+  background-color: #0960a5;
+}
+
+.list li {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 15px 10px 15px 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: #2196F3;
+  color: #FFFFFF;
+  border-bottom: 2px solid #BDBDBD;
+}
+
+.list li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  padding: 15px 20px 15px 20px;
+}
+
+.list li span:hover {
+  background-color: #FF4081;
+}
+
+.list li:hover {
+  background-color: #1976D2;
+}
+
+.list li.checked {
+  background-color: #F44336;
+  color: #212121;
+  text-decoration: line-through;
+}
+
+.list li.checked span:hover {
+  background-color: #E040FB;
+}
+
+.list li.checked::before {
+  content: '\2713';
+  position: absolute;
+  left: 10px;
+}
+
+.input-div {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto 0px auto;
+  position: relative;
+}
+
+.input-div .add {
+  display: block;
+  width: 721px;
+  height: 1.5em;
+  padding: 13px 10px 13px 10px;
+  border: 2px #BDBDBD solid;
+}
+
+.input-div .add:focus {
+  -webkit-box-shadow: 1px 1px 4px 4px #BDBDBD;
+          box-shadow: 1px 1px 4px 4px #BDBDBD;
+}
+
+.input-div span {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+  height: 30px;
+  font-size: 1.5em;
+  padding: 10px 20px 10px 20px;
+  background-color: #FF4081;
+}
+/*# sourceMappingURL=style.css.map */
